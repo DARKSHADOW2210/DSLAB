@@ -8,7 +8,7 @@ struct Distance addD(struct Distance d1, struct Distance d2){
 	result.feet = d1.feet + d2.feet;
 	result.inches = d1.inches+d2.inches;
 	if(result.inches>=12.0){
-		result.feet += (int)(result.inches/12);
+		result.feet += (int)result.inches/12;
 		result.inches = (int)result.inches%12;
 	}
 	return result;
