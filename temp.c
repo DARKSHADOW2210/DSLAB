@@ -13,7 +13,6 @@ struct TemperatureData {
 };
 
 void convertTemp(struct TemperatureData data) {
-    float convertedTemp;
     if (data.scale == CELSIUS) {
 		float fahrenheit = (data.value.celsius*9/5+32);
         printf("%.2f degrees Celsius is %.2f degrees Fahrenheit.\n",data.value.celsius, fahrenheit);
